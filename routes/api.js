@@ -27,6 +27,10 @@ router.post('/api/notes', (req, res) => {
         text,
         id: uniqid(),
     };
-    readAndAppend(newNote, './db/db.json');
+    readAndAppend(newnote, './db/db.json');
     res.json(newnote);
 })
+
+// get delete?
+
+module.exports = router;

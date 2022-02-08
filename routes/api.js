@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const fs = require('fs');
-const uniqid = require('uniqid');
+var uniqid = require('uniqid');
 const db = require('../db/db.json');
 const { readFromFile, writeToFile, readAndAppend } = require('./helpers');
 

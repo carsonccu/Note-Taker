@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
 
-app.use('/api', apiRoute);
-app.use('/', htmlRoute);
+app.use(apiRoute);
+app.use(htmlRoute);
 // which port your listening on
 app.listen(PORT, () =>
     console.log(`App listening at http://localhost:${PORT}`)
